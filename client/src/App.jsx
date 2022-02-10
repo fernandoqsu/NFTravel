@@ -1,4 +1,4 @@
-import {Navbar, Footer} from './components';
+import {Navbar, Footer, Welcome, incaCollection, nftSection, roadMap, toursCollection} from './components';
 
 const App = () => {
   return (
@@ -6,7 +6,12 @@ const App = () => {
        <div className='min-h-screen'>
           <div className='gradient-bg-welcome'>
               <Navbar />
+              <Welcome />
+              <incaCollection />
           </div>
+          <nftSection />
+          <toursCollection />
+          <roadMap />
           <Footer />
        </div>
     </div>
