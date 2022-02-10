@@ -1,4 +1,4 @@
-import {Navbar, Footer, Welcome, incaCollection, nftSection, roadMap, toursCollection} from './components';
+import {Navbar, Footer, Welcome, Collection, Nfts, Roadmap, Tours} from './components';
 
 const App = () => {
   return (
@@ -7,11 +7,11 @@ const App = () => {
           <div className='gradient-bg-welcome'>
               <Navbar />
               <Welcome />
-              <incaCollection />
+              <Collection />
           </div>
-          <nftSection />
-          <toursCollection />
-          <roadMap />
+          <Nfts />
+          <Tours />
+          <Roadmap />
           <Footer />
        </div>
     </div>

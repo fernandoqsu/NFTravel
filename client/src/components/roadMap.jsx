@@ -1,7 +1,7 @@
-const roadMap = () => {
+const Roadmap = () => {
     return(
-        <h1>roadMap</h1>
+        <h1>Roadmap trasado</h1>
     )
 }
 
-export default roadMap;
+export default Roadmap;
