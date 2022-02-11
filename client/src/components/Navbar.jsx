@@ -6,7 +6,7 @@ import logo from '../../images/logo.png';
 
 const NavbarItem = ({title, classprops}) =>{
     return(
-        <li className={`mx-4 cursor-pointer divide-solid hover:border-b-2 hover:border-amber-300 hover:text-amber-300 duration-100 ${classprops}`}>
+        <li className={`mx-6 cursor-pointer divide-solid hover:border-b-2 hover:border-amber-300 hover:text-amber-300 duration-100 ${classprops}`}>
             {title}
         </li>
     );
@@ -16,9 +16,9 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return(
-        <nav className='w-full flex md:justify-around justify-between items-center p-4'>
-            <div className='flex-initial justify-center items-center'>
-                <h1 className='cursor-pointer text-white text-3xl font-black text-amber-300 hover:animate-pulse duration-200 transition ease-in-out'>
+        <nav className='w-full flex md:justify-evenly justify-between items-center p-4'>
+            <div className='w-flex-initial justify-center items-center'>
+                <h1 className='text-center cursor-pointer text-white text-3xl font-black text-amber-300 hover:animate-pulse duration-200 transition ease-in-out'>
                     NFTravel
                 </h1>
             </div>
@@ -27,10 +27,10 @@ const Navbar = () => {
                     <NavbarItem key={item + index} title ={item} />
                 ))}                
             </ul>
-            <button className='text-black md:flex hidden list-none flex-row justify-between items-center flex-initial py-2 px-7 mx-4 rounded-full cursor-pointer bg-gradient-to-r from-amber-200 to-amber-500 hover:from-amber-500 hover:to-amber-200 hover:animate-pulse transition ease-in-out'>
-                Join us
+            <button className='text-white md:flex hidden flex-row justify-between items-center flex-initial py-2 px-7 mx-4 rounded-full cursor-pointer bg-gradient-to-r from-amber-200 to-amber-500 hover:from-amber-500 hover:to-amber-200 hover:animate-pulse transition ease-in-out'>
+                Connect Wallet
             </button>
-            <div className='flex relative'>
+            <div className='flex absolute top-6 right-6'>
                 {toggleMenu
                     ? <AiOutlineClose fontSize={20} className="text-white md:hidden cursor-pointer" onClick={() => setToggleMenu(false)}/>
                     : <HiMenuAlt4 fontSize={20} className="text-white md:hidden cursor-pointer" onClick={() => setToggleMenu(true)}/>
