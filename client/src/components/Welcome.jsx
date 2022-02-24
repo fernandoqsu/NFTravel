@@ -37,9 +37,7 @@ const Welcome = () => {
                         <p className='text-white text-base font-semibold'>Explore tours</p> 
                         </button>
                     </div>
-                    <div className='hidden sm:flex'>
-                        
-                    </div>                  
+                
                 </div>
             </div>
         </div>
