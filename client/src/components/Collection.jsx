@@ -2,12 +2,21 @@ import nft from '../../images/nft.jpg';
 
 const Collection = () => {
     return(
-        <div className='flex w-full justify-around items-center md:flex-row flex-wrap pb-28 px-28'>
-            <img src={nft} alt="nft" className='w-40 max-w-none md:py-0 py-4 m-4'/>
-            <img src={nft} alt="nft" className='w-40 max-w-none md:pt-28 py-4 m-4'/>
-            <img src={nft} alt="nft" className='w-40 max-w-none md:py-0 py-4 m-4'/>
-            <img src={nft} alt="nft" className='w-40 max-w-none md:pt-28 py-4 m-4'/>
-            <img src={nft} alt="nft" className='w-40 max-w-none md:py-0 py-4 m-4'/>
+        <div>
+            <div className='hidden sm:flex w-full justify-around items-start md:flex-row flex-wrap pb-12 px-28'>
+                <img src={nft} alt="nft" className='w-32 md:w-40 max-w-none md:py-0 py-4 m-6 '/>
+                <img src={nft} alt="nft" className='w-32 md:w-40 max-w-none md:pt-20 py-4 m-6 '/>
+                <img src={nft} alt="nft" className='w-32 md:w-40 max-w-none md:py-0 py-4 m-6 '/>
+                <img src={nft} alt="nft" className='w-32 md:w-40 max-w-none md:pt-20 py-4 m-6 '/>
+                <img src={nft} alt="nft" className='w-32 md:w-40 max-w-none md:py-0 py-4 m-6 '/>
+            </div>
+            <div className='flex sm:hidden w-full overflow-x-hidden'>
+                <img src={nft} alt="nft" className='w-44 md:p-0 py-4 m-6'/>
+                <img src={nft} alt="nft" className='w-44 md:p-0 py-4 m-6'/>
+                <img src={nft} alt="nft" className='w-44 md:p-0 py-4 m-6'/>
+                <img src={nft} alt="nft" className='w-44 md:p-0 py-4 m-6'/>
+                <img src={nft} alt="nft" className='w-44 md:p-0 py-4 m-6'/>
+            </div>
         </div>
     )
 }
