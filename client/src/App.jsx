@@ -9,7 +9,7 @@ const App = () => {
               <Welcome />
               <Collection />
           </div>
-          <Nfts />
+          <Nfts/>
           <Tours />
           <Roadmap />
           <Footer />

@@ -2,11 +2,11 @@ import nft from '../../images/nft.jpg';
 
 const Nfts = () => {
     return(
-        <div className="flex w-full justify-center items-center gradient-bg-services">
+        <div id='nfts' className="flex w-full justify-center items-center gradient-bg-services py-16">
             <div className="flex mf:flex-row flex-col item-center justify-between md:p-20 py-12 px-4">
                 <div className="flex-1 flex flex-col justify-start items-center">
-                    <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient font-medium">
-                        Get your nft and start traveling!
+                    <h1 className="text-white border-b-4 border-amber-400 text-3xl sm:text-5xl py-2  font-medium">
+                        Get your nft and start traveling <span className='text-amber-400'>!</span>
                     </h1>
                 </div>
                 <div className="flex-wrap md:flex w-full justify-center items-center sm:py-12">
